@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+        margin: 0;
+        padding: 0;
+        background-image: url('scales5.png'); 
+        background-size: cover;
+        background-position: center;
+        background-attachment:scroll;
+        background-color: rgba(255, 255, 255, 0.2); /* Adjust the last value (0.5) for transparency */
+        /* You can also use rgba(0, 0, 0, 0.5); for a black background with 50% transparency */
+      
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #1e3256, #85a8bf);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color:  #404040;
+    border-bottom: 1px solid #E6EDF2;
+}
+.navbar.scrolled a:hover {
+    background-color: #1e3256;
+    color: #E6EDF2;
+}
+
+.dropdown .scrolled {
+    background-color:  #404040;
+    border-bottom: 1px solid #E6EDF2;
+}
+.dropbtn:hover, .dropbtn:focus .scrolled{
+    background-color: #1e3256;
+    color: #E6EDF2;
+}
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 70px;
+    width: 60px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #1e3256;
+    color: #E6EDF2;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #1e3256;
+    color: #E6EDF2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+    color: #85a8bf;
+}
+
+.show {
+    display: block;
+}
+/*heading*/
+.twelve h1 {
+    font-size: 63px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /*width: 160px;*/
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+    padding-bottom: 13px;
+    position: relative; 
+    margin-top: 150px;
+    color: linear-gradient(to bottom, #1e3256, #85a8bf);
+    
+}
+.twelve span{
+    color:  #85a8bf;
+}
+.twelve h1:before {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 520px;
+    margin-bottom: 5px;
+    
+}
+
+.twelve h1:after {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 700px;
+    margin-bottom: 0.25em;
+}
+
+/*about us*/
+.aboutus_section {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.aboutus_section p {
+    max-width: 900px;
+    text-align:unset;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .aboutus_section {
+    position: relative;
+    padding: 30px 0;
+  }
+
+.aboutus_section .heading_container {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.aboutus_section .heading_container h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+}
+
+.aboutus_section .heading_container h2 span {
+    color: #85a8bf;
+}
+.aboutus_section .heading_container p {
+    color: #777;
+
+}
+.aboutus_section p span {
+    color: #3bb1a2;
+
+}
+/*service*/
+.services_section {
+    text-align: center;
+    padding: 20px;
+  }
+  .services_section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .services_section {
+    position: relative;
+    padding: 30px 0;
+  }
+  
+  .services_section .heading_container {
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+  
+  .services_section .heading_container h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+  }
+  
+  .services_section .heading_container h2 span {
+    color: #85a8bf;
+  }
+  
+  .services_section .heading_container p {
+    color: #777;
+  }
+  .service-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: white;
+  }
+  
+  /* Styling for each service box */
+  .service-box {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the heading inside each service box */
+  .service-box h3 {
+    color: #404040;
+    margin-top: 0;
+  }
+
+
+
+  
+
