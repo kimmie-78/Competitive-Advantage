@@ -607,6 +607,9 @@ body {
     max-width: 350px;
     height: 100px;
   }
+  .footer-pad .i{
+   font-size: 48px;
+  }
 .social-icons {
    
     bottom: 20px;
