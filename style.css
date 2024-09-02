@@ -543,8 +543,9 @@ body {
 }
 
 .footer_section p, .footer_section a {
-    color:  #fff;
-    font-size: 14px;
+    color:  hsl(0, 0%, 100%);
+    font-size: 18px;
+    padding-top: 2px;
 }
 
 .footer_section a:hover {
